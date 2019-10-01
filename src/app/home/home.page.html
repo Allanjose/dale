@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+   <ion-label>CEP</ion-label>
+   <ion-input type='text' name='cep' [(ngModel)]="endereco.cep" (ionBlur)="preencher()"></ion-input>
+ </ion-item>
+
+ <ion-item>
+   <ion-label>Bairro</ion-label>
+   <ion-input type='text' name='bairro' [(ngModel)]="endereco.bairro" (ionBlur)="preencher()"></ion-input>
+ </ion-item>
+
+ <ion-item>
+   <ion-label>UF</ion-label>
+   <ion-input type='text' name='uf' [(ngModel)]="endereco.uf" (ionBlur)="preencher()"></ion-input>
+ </ion-item>
+
+
+
+</ion-content>
